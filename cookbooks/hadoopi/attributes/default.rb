@@ -2,7 +2,7 @@
 default['hue']['secretkey']="qpbdxoewsqlkhztybvfidtvwekftusgdlofbcfghaswuicmqp"
 default['hadoop']['maxmem']=512
 default['hadoop']['repobase']="http://192.168.1.4:8137/"
- 
+
 #versions
 default['hadoop']['version'] = '2.6.4'
 default['livy']['version'] = '0.2.0'
