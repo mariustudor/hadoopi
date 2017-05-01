@@ -1,0 +1,12 @@
+{
+    "run_list": [
+		"recipe[hadoopi::network]",
+		"recipe[hadoopi::user]",
+		"recipe[hadoopi::hadoop-install]"
+	],
+
+	"node": {
+		"hostname": "worker05",
+		"ip_address": "10.0.0.25"
+	}
+}

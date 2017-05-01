@@ -25,5 +25,7 @@ default['hosts'] =  {
     "worker01" => "10.0.0.21",
     "worker02" => "10.0.0.22",
     "worker03" => "10.0.0.23"
+	"worker04" => "10.0.0.24"
+	"worker05" => "10.0.0.25"
 }
 default['gateway'] = '10.0.0.1'
