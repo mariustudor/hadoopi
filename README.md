@@ -48,13 +48,13 @@ There are some caveates to bear in mind when using this tool.
 ## The hardware
 To build the cluster you are going to need:
 
-* 5 x Raspberry Pi 3s
+* 7 x Raspberry Pi 3s
 * Nylon Spacers to stack the Pis
 * Acrylic Raspberry Pi case for base and lid to keep the dust off
 * Wireless Router - I'm using a TP-Link tl-wr802n travel router
 * Anker 60w 6 usb port hub
-* 6 usb cables
-* 5 x Samsung Evo+64GB micro sd cards
+* 8 usb cables
+* 7 x Samsung Evo+64GB micro sd cards
 * Computer for administering via ssh, running a webserver and a web browser to access Hue
 
 Just a quick note on the micro sd cards, perfromance of cards can vary wildly, I was recommended the Evo+ cards as their performance at reading and writing small files was very good, you can check the performance of yours using  https://github.com/geerlingguy/raspberry-pi-dramble/blob/master/setup/benchmarks/microsd-benchmarks.sh
