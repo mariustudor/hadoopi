@@ -270,7 +270,7 @@ Wait for it to finish and:
 
 **You now need to repeat these steps using a fresh sd card for worker02,...,worker05 and master02.**
 
-For the setup of master01 place the final sd card in the pi with the ethernet connection, setup the remaining 4 pis with the previously configured sd cards and power up all of the pis. As before ssh into the Pi you are configuring, update the system, install git & chef, clone the code, set you network SSID & password, then run:
+For the setup of master01 place the final sd card in the pi with the ethernet connection, setup the remaining 6 pis with the previously configured sd cards and power up all of the pis. As before ssh into the Pi you are configuring, update the system, install git & chef, clone the code, set you network SSID & password, then run:
 
     chef-solo -c solo.rb -j master01.json
 
