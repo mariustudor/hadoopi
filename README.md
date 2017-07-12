@@ -1,4 +1,4 @@
-# Hadoopi - the Raspberry Pi Hadoop cluster
+﻿# Hadoopi - the Raspberry Pi Hadoop cluster
 
 This project contains the configuration files and chef code to configure a cluster of five Raspberry Pi 3s as a working Hadoop running Hue.
 
@@ -197,7 +197,8 @@ Now download the ext-2.2 library and package the files:
 
 ### Making the Compiled Files Available
 Transfer the compiled binary files to you computer and start the python webserver to make them available to the pis as you configure the cluster:
-	python -m SimpleHTTPServer
+	(Python 3.0)
+	python -m http.server 8999
 
 ## Installing and Configuring the Cluster
 The cluster will comprise of 5 Raspberry Pis, 3 of them will be configured as worker nodes (worker01, worker02 and worker03) and have the HDFS Datnode and Yarn Nodemanager Hadoop components installed. The remaining two Pis will be setup as master01 and master02.
@@ -249,7 +250,7 @@ Installed git and chef:
 
 Clone the code from github to the Pi:
 
-    git clone https://github.com/andyburgin/hadoopi.git
+    git clone https://github.com/mariustudor/hadoopi.git
     cd hadoopi
 
 Set your wifi SSID and password as environment variables:
