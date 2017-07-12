@@ -213,6 +213,7 @@ master01
 * Pig
 * Oozie
 * Sqoop
+* Solr
 
 master02
 * Hbase
