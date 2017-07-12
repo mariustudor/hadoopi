@@ -201,7 +201,7 @@ Transfer the compiled binary files to you computer and start the python webserve
 	python -m http.server 8999
 
 ## Installing and Configuring the Cluster
-The cluster will comprise of 5 Raspberry Pis, 3 of them will be configured as worker nodes (worker01, worker02 and worker03) and have the HDFS Datnode and Yarn Nodemanager Hadoop components installed. The remaining two Pis will be setup as master01 and master02.
+The cluster will comprise of 7 Raspberry Pis, 5 of them will be configured as worker nodes (worker01,...,worker05) and have the HDFS Datanode and Yarn Nodemanager Hadoop components installed. The remaining two Pis will be setup as master01 and master02.
 
 The master nodes will have the the Hadoop components:
 
@@ -228,7 +228,9 @@ The cluster is setup to run on the 10.0.0.x network range:
 * 10.0.0.21 - worker01
 * 10.0.0.22 - worker02
 * 10.0.0.23 - worker03
-* 10.0.0.9  - administering computer running python webserver
+* 10.0.0.24 - worker04
+* 10.0.0.25 - worker05
+* pc ip  - administering computer running python webserver
 
 The TP-Link router is setup in "WISP Client" mode so it bridges the two wifi networks from 10.0.0.x to 192.168.2.x that way I can set the cluster up so it has outbound internet connectivity from the 10.0.0.x network on via my 192.168.2.x network. The great advantage with this setup is the cluster and router can taken away from my 192.168.2.x network and use the cluster without having to reconfigure the network.
 
@@ -266,7 +268,7 @@ Wait for it to finish and:
 
     poweroff
 
-**You now need to repeat these steps using a fresh sd card for worker02, worker03 and master02.**
+**You now need to repeat these steps using a fresh sd card for worker02,...,worker05 and master02.**
 
 For the setup of master01 place the final sd card in the pi with the ethernet connection, setup the remaining 4 pis with the previously configured sd cards and power up all of the pis. As before ssh into the Pi you are configuring, update the system, install git & chef, clone the code, set you network SSID & password, then run:
 
